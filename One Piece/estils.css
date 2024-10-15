@@ -1,0 +1,143 @@
+/* Estilos básicos de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffb00; /* Fondo amarillo */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #383737; /* Fondo gris oscuro */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Cambiar a columna para colocar el logo encima del nav */
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 300px ;
+}
+
+
+header .logo img {
+    height: 100px; /* Aumenta el tamaño del logo */
+}
+
+nav {
+    background-color: #383737;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: #ff9100; /* Texto color naranja */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.titol-principal {
+    color: rgb(112, 112, 247); /* Cambia el color del texto a azul */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    background-color: #fff;
+    margin: 0  300px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el contenedor de la fecha e imágenes */
+.fecha-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre la fecha y las imágenes */
+    margin-top: 10px;
+}
+
+.fecha {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+/* Estilo para las imágenes pequeñas */
+.icono-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px; /* Opcional: bordes redondeados */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+.imagen-principal {
+    display: block; /* Hace que la imagen sea un elemento de bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+}
+
+main article h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+main .fecha {
+    font-size: 14px;
+    color: #777;
+}
+
+main img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #a506aa;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-logo img {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los enlaces de la wiki */
+.wiki-links a {
+    color: #ff9100; /* Color naranja */
+    text-decoration: none; 
+    font-weight: bold; 
+    margin-right: 10px; 
+}
+
+.wiki-links a:hover {
+    color: #000000; 
+}
+
+/* Estilos para los enlaces de la wiki */
+.wiki-links {
+    display: flex;
+    flex-direction: column; /* Muestra los enlaces en columna */
+    gap: 5px; /* Espacio entre los enlaces */
+}
+
+.wiki-links a {
+    color: #ff9100; /* Color naranja */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+}
+
+.wiki-links a:hover {
+    color: #000000; /* Cambia a negro cuando pases el ratón */
+}
