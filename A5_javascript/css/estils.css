@@ -1,0 +1,362 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Fondo negro */
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Para que el fondo esté detrás del contenido */
+}
+
+.stars {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #fff, 0 0 10px #fff, 0 0 12px #fff, 0 0 14px #fff, 0 0 16px #fff;
+  animation: animStar 50s linear infinite;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  filter: blur(2px);
+  animation: moveStar linear infinite;
+}
+
+@keyframes moveStar {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
+
+@keyframes animStar {
+  from { transform: translateY(0); }
+  to { transform: translateY(-1000px); }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centra los elementos de la navbar */
+  align-items: center;
+  padding: 10px 20px;
+  background: transparent; 
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.nav-icon {
+  width: 60px; /* Ajusta el tamaño de la imagen */
+  transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.nav-icon:hover {
+  transform: scale(1.1); /* Efecto de agrandamiento al pasar el ratón por encima */
+}
+
+.navbar .logo {
+  margin-right: 40px; /* Empuja los enlaces al centro */
+  width: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px; /* Ajusta el espacio entre los enlaces */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 40px; /* Ajusta el tamaño de la fuente */
+  transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.timer {
+  font-size: 40px; /* Ajusta el tamaño de la fuente */
+  color: white;
+  position: absolute; /* Posiciona el contador de tiempo de forma absoluta */
+  margin-left: 40px;
+  left: 20px; /* Mueve el contador a la izquierda */
+  padding: 10px 20px; /* Añade relleno dentro del rectángulo */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+  border: 2px solid white; /* Borde blanco */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.timer {
+  font-size: 20px; /* Ajusta el tamaño de la fuente */
+  color: white;
+  margin-right: auto; /* Mueve el contador a la izquierda */
+  padding-left: 20px; /* Añade un poco de espacio desde el borde de la página */
+}
+
+  /* Títol */
+  .main-title {
+    font-size: 70px;
+    margin-top: 40px;
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+    animation: breathe 3s infinite; /* Añade la animación de respiración */
+  }
+
+  @keyframes breathe {
+    0%, 100% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      text-shadow: 0 0 40px rgba(255, 255, 255, 1);
+    }
+  }
+  
+
+  .intro-text {
+    margin: 50px; /* Añade margen alrededor del texto */
+    margin-left: 400px;
+    margin-right: 400px;
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    font-size: 20px; /* Ajusta el tamaño de la fuente según tus necesidades */
+    line-height: 1.6; /* Ajusta el interlineado para mejorar la legibilidad */
+    color: #ffffff; /* Cambia el color del texto si es necesario */
+  }
+  
+  /* Galeria d’imatges */
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .gallery-image {
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
+    transform-origin: center center; /* Asegura que el escalado ocurra desde el centro */
+    position: relative; /* Asegura que la posición sea relativa al contenedor */
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .hidden-text {
+    display: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .image-container:hover .gallery-image {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+  }
+  
+  .image-container:hover .hidden-text {
+    display: block;
+  }
+
+/* Modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8));
+  backdrop-filter: blur(8px); /* Efecte de desenfocament */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #444, #222);
+  color: white;
+  margin: 10% auto;
+  padding: 30px;
+  border: none;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #f5a623; /* Color destacat */
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-content label {
+  font-size: 14px;
+  color: #ccc;
+  text-align: left;
+}
+
+.modal-content input {
+  padding: 10px 15px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background: #111;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.modal-content input:focus {
+  border-color: #f5a623;
+}
+
+.modal-content button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #f5a623;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-content button:hover {
+  background: #e5941c;
+}
+
+.close {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: #f5a623;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ff6b6b; /* Color d'error */
+}
+
+/* Animacions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/*Footer*/
+
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    font-size: 20px;
+  }
+  
+  .footer .cc-link {
+    color: white;
+    margin-right: 10px;
+    font-size: 24px; 
+  }
+  
+  .footer .cc-link:hover {
+    color: #cccccc; 
+  }
+  
+  .footer .github-link {
+    color: white;
+    margin-left: 10px;
+    font-size: 24px; 
+  }
+  
+  .footer .github-link:hover {
+    color: #cccccc; 
+  }
+
+
+/* Iframes*/
+.sketchfab-embed-wrapper {
+  display: none; 
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.sketchfab-embed-wrapper iframe {
+  width: 1400px; /* Ajusta el tamaño según tus necesidades */
+  height: 700px; /* Ajusta el tamaño según tus necesidades */
+}

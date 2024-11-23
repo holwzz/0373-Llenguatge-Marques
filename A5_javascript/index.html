@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSGO</title>
+  <link rel="stylesheet" href="./css/estils.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="background">
+        <div class="stars"></div>
+      </div>
+      <div class="navbar">
+        <div class="timer" id="timer">00:00</div>
+        <nav class="navbar">
+            <img src="./img/logo.png" alt="Logo" class="logo">
+            <ul class="nav-links">
+              <li><a href="index.html">INICI</a></li>
+              <li><a href="#"><img src="./img/iconoak47.png" alt="Icon" class="nav-icon"></a></li>
+              <li><a href="#" onclick="openPasswordForm()">PASSWORD</a></li>
+            </ul>
+          </nav>
+      </div>
+
+  <!-- Títol -->
+  <h1 class="main-title">TOP SKINS COUNTER STRIKE</h1>
+  <p class="intro-text">Introducció per a un Top de Skins de CS:GO
+
+    Counter-Strike: Global Offensive (CS:GO) no és només un dels shooters més populars del món, sinó també un univers on el disseny i la personalització juguen un paper clau. Les skins de les armes han esdevingut un element essencial per als jugadors, no només per donar estil al seu arsenal, sinó també per mostrar personalitat i, en alguns casos, per presumir d'un objecte exclusiu.  
+    
+    En aquest top, et presentem les millors skins de CS:GO, des de les més llegendàries fins a les més espectaculars visualment. Però això no és tot: podràs explorar cadascuna d’aquestes skins en 3D, girar-les i admirar-ne tots els detalls per apreciar per què són tan icòniques. Ja sigui que busquis col·leccionar, invertir o simplement trobar la skin perfecta per a les teves partides, aquesta llista té alguna cosa per a tu. Prepara’t per descobrir obres d’art digitals que han captivat la comunitat!</p>
+ 
+    <!-- Imatges -->
+  <div class="image-gallery">
+    <div class="image-container" onmouseover="showText(this)" onmouseout="hideText(this)">
+      <img src="./img/dragon_lore.png" alt="Imatge 1" class="gallery-image" onclick="showIframe(1)">
+      <p class="hidden-text">AWP Dragon Lore</p>
+    </div>
+    <div class="image-container" onmouseover="showText(this)" onmouseout="hideText(this)">
+      <img src="./img/howl.png" alt="Imatge 2" class="gallery-image" onclick="showIframe(2)">
+      <p class="hidden-text">M4A4 Howl</p>
+    </div>
+    <div class="image-container" onmouseover="showText(this)" onmouseout="hideText(this)">
+      <img src="./img/emerald.png" alt="Imatge 3" class="gallery-image" onclick="showIframe(3)">
+      <p class="hidden-text">Karambit gamma doppler emerald</p>
+    </div>
+    <div class="image-container" onmouseover="showText(this)" onmouseout="hideText(this)">
+      <img src="./img/bloodsport.png" alt="Imatge 4" class="gallery-image" onclick="showIframe(4)">
+      <p class="hidden-text">AK-47 Bloodsport</p>
+    </div>
+    <div class="image-container" onmouseover="showText(this)" onmouseout="hideText(this)">
+      <img src="./img/killconfirmed.png" alt="Imatge 5" class="gallery-image" onclick="showIframe(5)">
+      <p class="hidden-text">USP-S Kill Confirmed</p>
+    </div>
+  </div>
+
+    <!-- Iframes -->
+<div class="sketchfab-embed-wrapper" id="iframe1">
+    <iframe title="AWP | Dragon Lore" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/e633e9b6a24142029843456efef22036/embed?autostart=1&transparent=1"> </iframe>
+  </div>
+  <div class="sketchfab-embed-wrapper" id="iframe2">
+    <iframe title="M4A4 | Howl (REMOVED)" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/e303d0f1658d42849d37d1de82aa8a0a/embed?autostart=1&transparent=1"> </iframe> 
+  </div>
+  <div class="sketchfab-embed-wrapper" id="iframe3">
+    <iframe title="Karambit | Eternity" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/c26554a0574f439dbc96bc3129f79b6d/embed?autostart=1&transparent=1"> </iframe>
+  </div>
+  <div class="sketchfab-embed-wrapper" id="iframe4">
+    <iframe title="AK-47 | Bloodsport" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/73afc68ff81d41678923c16e7f6e5e01/embed?autostart=1&transparent=1"> </iframe>
+  </div>
+  <div class="sketchfab-embed-wrapper" id="iframe5">
+    <iframe title="USP-S | Kill Confirmed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/13357e13e34f4b739ccd1fb59ec6f63c/embed?autostart=1&transparent=1"> </iframe>
+  </div>
+</nav>
+
+    <!-- Formulari de contrasenya -->
+    <div id="passwordModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closePasswordForm()">&times;</span>
+          <h2>Enter Password</h2>
+          <form id="passwordForm" onsubmit="return validatePassword()">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <button type="submit">Submit</button>
+            <p id="message" class="message"></p>
+          </form>
+        </div>
+      </div>
+      
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Pagina web creada per Ramon Aibar Farnos alumne de ASIX</p>
+    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" class="cc-link">
+        <i class="fab fa-creative-commons"></i>
+    </a>
+    <a href="https://github.com/holwzz" target="_blank" class="github-link">
+      <i class="fab fa-github"></i>
+    </a>
+  </footer>
+  <script src="./components/jscript.js"></script>
+</body>
+</html>
