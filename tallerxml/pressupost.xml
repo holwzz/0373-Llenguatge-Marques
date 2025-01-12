@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pressupost>
+    <ordinador id="1">
+        <component tipus="placa_base">
+            <nom>ASUS PRIME B550-PLUS</nom>
+            <preu moneda="EUR">140.00</preu>
+        </component>
+        <component tipus="processador">
+            <nom>AMD Ryzen 5 5600X</nom>
+            <preu moneda="EUR">220.00</preu>
+        </component>
+        <component tipus="memoria_RAM">
+            <nom>Corsair Vengeance LPX 16GB (2 x 8GB)</nom>
+            <preu moneda="EUR">85.00</preu>
+            <quantitat unitats="2"/>
+        </component>
+        <component tipus="disc_dur">
+            <nom>Samsung 970 EVO Plus 1TB</nom>
+            <preu moneda="EUR">100.00</preu>
+        </component>
+        <component tipus="targeta_grafica">
+            <nom>MSI GeForce RTX 3060</nom>
+            <preu moneda="EUR">350.00</preu>
+        </component>
+        <component tipus="targeta_de_so">
+            <nom>Creative Sound Blaster Z SE</nom>
+            <preu moneda="EUR">80.00</preu>
+        </component>
+    </ordinador>
+    <ordinador id="2">
+        <component tipus="placa_base">
+            <nom>Gigabyte B760 DS3H AX</nom>
+            <preu moneda="EUR">150.00</preu>
+        </component>
+        <component tipus="processador">
+            <nom>Intel Core i5-13400</nom>
+            <preu moneda="EUR">250.00</preu>
+        </component>
+        <component tipus="memoria_RAM">
+            <nom>Kingston FURY Beast 32GB (2 x 16GB)</nom>
+            <preu moneda="EUR">120.00</preu>
+            <quantitat unitats="2"/>
+        </component>
+        <component tipus="disc_dur">
+            <nom>WD Black SN850X 1TB</nom>
+            <preu moneda="EUR">110.00</preu>
+        </component>
+        <component tipus="targeta_grafica">
+            <nom>ASUS TUF Gaming GeForce RTX 3070</nom>
+            <preu moneda="EUR">500.00</preu>
+        </component>
+        <component tipus="targeta_de_so">
+            <nom>ASUS Xonar AE</nom>
+            <preu moneda="EUR">70.00</preu>
+        </component>
+    </ordinador>
+</pressupost>
