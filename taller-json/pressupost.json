@@ -1,0 +1,116 @@
+{
+    "pressupost": [
+      {
+        "id": "1",
+        "components": [
+          {
+            "tipus": "placa_base",
+            "nom": "ASUS PRIME B550-PLUS",
+            "preu": {
+              "moneda": "EUR",
+              "valor": 140.00
+            }
+          },
+          {
+            "tipus": "processador",
+            "nom": "AMD Ryzen 5 5600X",
+            "preu": {
+              "moneda": "EUR",
+              "valor": 220.00
+            }
+          },
+          {
+            "tipus": "memoria_RAM",
+            "nom": "Corsair Vengeance LPX 16GB (2 x 8GB)",
+            "preu": {
+              "moneda": "EUR",
+              "valor": 85.00
+            },
+            "quantitat": {
+              "unitats": 2
+            }
+          },
+          {
+            "tipus": "disc_dur",
+            "nom": "Samsung 970 EVO Plus 1TB",
+            "preu": {
+              "moneda": "EUR",
+              "valor": 100.00
+            }
+          },
+          {
+            "tipus": "targeta_grafica",
+            "nom": "MSI GeForce RTX 3060",
+            "preu": {
+              "moneda": "EUR",
+              "valor": 350.00
+            }
+          },
+          {
+            "tipus": "targeta_de_so",
+            "nom": "Creative Sound Blaster Z SE",
+            "preu": {
+              "moneda": "EUR",
+              "valor": 80.00
+            }
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "components": [
+          {
+            "tipus": "placa_base",
+            "nom": "Gigabyte B760 DS3H AX",
+            "preu": {
+              "moneda": "EUR",
+              "valor": 150.00
+            }
+          },
+          {
+            "tipus": "processador",
+            "nom": "Intel Core i5-13400",
+            "preu": {
+              "moneda": "EUR",
+              "valor": 250.00
+            }
+          },
+          {
+            "tipus": "memoria_RAM",
+            "nom": "Kingston FURY Beast 32GB (2 x 16GB)",
+            "preu": {
+              "moneda": "EUR",
+              "valor": 120.00
+            },
+            "quantitat": {
+              "unitats": 2
+            }
+          },
+          {
+            "tipus": "disc_dur",
+            "nom": "WD Black SN850X 1TB",
+            "preu": {
+              "moneda": "EUR",
+              "valor": 110.00
+            }
+          },
+          {
+            "tipus": "targeta_grafica",
+            "nom": "ASUS TUF Gaming GeForce RTX 3070",
+            "preu": {
+              "moneda": "EUR",
+              "valor": 500.00
+            }
+          },
+          {
+            "tipus": "targeta_de_so",
+            "nom": "ASUS Xonar AE",
+            "preu": {
+              "moneda": "EUR",
+              "valor": 70.00
+            }
+          }
+        ]
+      }
+    ]
+  }
