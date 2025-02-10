@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": ["nom-equip", "jugadors"],
+    "properties": {
+        "nom-equip": {
+            "type": "string",
+            "description": "Nom de l'equip"
+        },
+        "jugadors": {
+            "type": "array",
+            "description": "Llista de jugadors",
+            "items": {
+                "type": "object",
+                "required": ["num-jugador", "DNI", "nom", "cognom", "ciutat", "email"],
+                "properties": {
+                    "num-jugador": {
+                        "type": "integer",
+                        "description": "Número de jugador"
+                    },
+                    "DNI": {
+                        "type": "string",
+                        "pattern": "^[0-9]{8}[A-Z]$",
+                        "description": "DNI del jugador"
+                    },
+                    "nom": {
+                        "type": "string",
+                        "description": "Nom del jugador"
+                    },
+                    "cognom": {
+                        "type": "string",
+                        "description": "Cognom del jugador"
+                    },
+                    "edat": {
+                        "type": "integer",
+                        "minimum": 16,
+                        "description": "Edat del jugador"
+                    },
+                    "ciutat": {
+                        "type": "string",
+                        "description": "Ciutat de residència del jugador"
+                    },
+                    "adreça": {
+                        "type": "string",
+                        "description": "Adreça de residència del jugador"
+                    },
+                    "telèfon": {
+                        "type": "integer",
+                        "description": "Telèfon de contacte del jugador"
+                    },
+                    "email": {
+                        "type": "string",
+                        "format": "email",
+                        "description": "Correu electrònic del jugador"
+                    }
+                },
+                "additionalProperties": false
+            }
+        }
+    },
+    "additionalProperties": false
+}
