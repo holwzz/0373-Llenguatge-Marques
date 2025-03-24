@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicció del Temps</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .forecast { margin: 10px 0; padding: 10px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>Predicció del Temps</h1>
+    <div id="output">Carregant dades...</div>
+
+    <script>
+        fetch("dadesobertes_pg.json")
+            .then(response => response.json())
+            .then(data => {
+                let output = "<h2>Predicció Meteorològica</h2>";
+                
+                data.forEach(prediccio => {
+                    output += `
+                        <div class="forecast">
+                            <h3>${prediccio.diaPredit}</h3>
+                            <p><strong>Estat del Cel:</strong> ${prediccio.versio.variables.estatDelCel}</p>
+                            <p><strong>Precipitacions:</strong> ${prediccio.versio.variables.precipitacions}</p>
+                            <p><strong>Temperatures:</strong> ${prediccio.versio.variables.temperatures}</p>
+                            <p><strong>Visibilitat:</strong> ${prediccio.versio.variables.visibilitat}</p>
+                            <p><strong>Vent:</strong> ${prediccio.versio.variables.vent}</p>
+                        </div>
+                    `;
+                });
+
+                document.getElementById("output").innerHTML = output;
+            })
+            .catch(error => {
+                document.getElementById("output").innerHTML = "Error al carregar les dades.";
+                console.error("Error carregant JSON:", error);
+            });
+    </script>
+</body>
+</html>

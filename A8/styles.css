@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+.previsio-dia {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+}
+
+.previsio-dia h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+.previsio-dia p {
+    margin: 5px 0;
+}
+
+.previsio-dia .variables {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
